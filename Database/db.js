@@ -4,8 +4,10 @@ const mongoose = require("mongoose");
 // const mongoURI = process.env.MONGODB_URI;
 
 const connectToMongo = () => {
+
+  //console.log(dburl+"abc");
   mongoose
-    .connect(`${dburl}`)
+    .connect(`mongodb+srv://Sneha:Sneha@cluster0.nhxqexb.mongodb.net/test`)
     .then(() => {
       console.log("Connected to MongoDB Successfully");
     })
